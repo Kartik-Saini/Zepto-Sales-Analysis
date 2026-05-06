@@ -120,7 +120,7 @@ The goal was to extract meaningful business insights from raw product data — i
 zepto-sql-analysis/
 │
 ├── zepto_analysis.sql    # All SQL queries
-├── dashboard.png         # Power BI dashboard screenshot
+├── dashboard.pdf         # Power BI dashboard screenshot
 └── README.md             # Project documentation
 ```
 
