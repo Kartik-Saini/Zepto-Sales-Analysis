@@ -117,10 +117,11 @@ The goal was to extract meaningful business insights from raw product data — i
 ## 📁 Project Structure
 
 ```
-zepto-sql-analysis/
+Zepto-Sales-Analysis/
 │
-├── zepto_analysis.sql    # All SQL queries
+├── queries.sql    # All SQL queries
 ├── dashboard.pdf         # Power BI dashboard screenshot
+├── zepto_.csv            # Excel Sheet
 └── README.md             # Project documentation
 ```
 
