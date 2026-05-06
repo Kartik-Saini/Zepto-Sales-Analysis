@@ -1,6 +1,7 @@
-# 🛒 Zepto Product Analysis — SQL Project
+# 🛒 Zepto Product Analysis — SQL + Power BI Project
 
 ![SQL](https://img.shields.io/badge/SQL-PostgreSQL-blue)
+![PowerBI](https://img.shields.io/badge/Dashboard-Power%20BI-yellow)
 ![Status](https://img.shields.io/badge/Status-Completed-green)
 ![Level](https://img.shields.io/badge/Level-Intermediate-orange)
 
@@ -8,9 +9,40 @@
 
 ## 📌 Project Overview
 
-This project performs an end-to-end **data exploration, cleaning, and business analysis** on Zepto's grocery product catalog using **PostgreSQL**.
+This project performs an end-to-end **data exploration, cleaning, business analysis, and visualization** on Zepto's grocery product catalog.
 
-The goal was to extract meaningful business insights from raw product data — including pricing, discounts, stock availability, and inventory weight — to support data-driven decision making.
+The project is divided into two parts:
+- **Part 1 — SQL Analysis:** Data cleaning and business insights using PostgreSQL
+- **Part 2 — Power BI Dashboard:** Interactive dashboard built on the same dataset
+
+The goal was to extract meaningful business insights from raw product data — including pricing, discounts, stock availability, and inventory — to support data-driven decision making.
+
+---
+
+## 📊 Power BI Dashboard
+
+### Dashboard Preview
+![Zepto Dashboard](dashboard.png)
+
+### Key Metrics (KPI Cards):
+| Metric | Value |
+|---|---|
+| 💰 Total Revenue | ₹122.27M |
+| 📦 Total Products | 4K |
+| 🏷️ Avg Discount % | 7.62 |
+| 🚫 Out of Stock Items | 453 |
+
+### Visuals Built:
+- 📊 **Bar Charts** — Top Categories by Revenue (product-wise)
+- 🔲 **KPI Cards** — Total Revenue, Total Products, Avg Discount, Out of Stock
+- 🎛️ **Slicer** — Filter by Category (Chocolates & Candies, Cooking Essentials, Home & Cleaning, Ice Cream & Desserts, Munchies, Paan Corner, Packaged Food, Personal Care)
+
+### Top Products by Revenue:
+1. Kellogg's Original Corn Flakes
+2. Pedigree Puppy Dry Dog Food
+3. Kellogg's Special K Original
+4. Whiskas Kitten (2-12 months)
+5. Godrej Yummiez Chicken Nuggets
 
 ---
 
@@ -31,7 +63,7 @@ The goal was to extract meaningful business insights from raw product data — i
 
 ---
 
-## 🧹 Data Cleaning
+## 🧹 Data Cleaning (SQL)
 
 - Identified and removed products with **zero MRP**
 - Checked and handled **NULL values** across all columns
@@ -40,7 +72,7 @@ The goal was to extract meaningful business insights from raw product data — i
 
 ---
 
-## 📊 Business Questions Answered
+## 📊 Business Questions Answered (SQL)
 
 ### 🔍 Data Exploration
 - How many products are in the dataset?
@@ -60,7 +92,7 @@ The goal was to extract meaningful business insights from raw product data — i
 ### ⚖️ Weight & Value Analysis
 - What is the **price per gram** for products above 100g?
 - How are products grouped by weight — **Low / Medium / Bulk**?
-- Which products offer the **best value for money** (lowest price per gram)?
+- Which products offer the **best value for money**?
 
 ### 📈 Revenue
 - What is the **estimated revenue potential per category**?
@@ -88,6 +120,7 @@ The goal was to extract meaningful business insights from raw product data — i
 zepto-sql-analysis/
 │
 ├── zepto_analysis.sql    # All SQL queries
+├── dashboard.png         # Power BI dashboard screenshot
 └── README.md             # Project documentation
 ```
 
@@ -97,8 +130,17 @@ zepto-sql-analysis/
 
 - 📦 Majority of products fall under **Low weight category** (< 1000g)
 - 💸 Some high-MRP products have **very low discounts** — pricing opportunity
-- 🚫 Several **premium products are out of stock** — potential revenue loss
+- 🚫 **453 products are out of stock** — potential revenue loss
 - 🏷️ Categories with highest avg discounts offer best deals for customers
+- 🥣 **Kellogg's & Pedigree** are top revenue-generating products
+
+---
+
+## 🔧 Tools Used
+
+- **PostgreSQL** — Data cleaning & analysis
+- **Power BI Desktop** — Dashboard & visualization
+- **Excel** — Raw data source
 
 ---
 
