@@ -22,7 +22,8 @@ The goal was to extract meaningful business insights from raw product data — i
 ## 📊 Power BI Dashboard
 
 ### Dashboard Preview
-![Zepto Dashboard](dashboard.png)
+![Zepto Dashboard](<img width="1496" height="861" alt="dashboard" src="https://github.com/user-attachments/assets/65cb99a8-a551-451f-90e5-89c75a816b7a" />
+)
 
 ### Key Metrics (KPI Cards):
 | Metric | Value |
